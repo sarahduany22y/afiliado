@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7KTN7GPTN"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -11,7 +11,7 @@
       gtag('config', 'G-Q7KTN7GPTN');
     </script>
 
-    <!-- Event snippet for Visualização de página DentaBiome conversion page -->
+    <!-- Tag de Visualização de página do Google Ads (Mantida) -->
     <script>
       gtag('event', 'conversion', {'send_to': 'AW-17013709525/Kl8DCMf5o-YcENW14rA_'});
     </script>
@@ -215,14 +215,17 @@
         <div class="blue-content-box">
             <p>A unique and patented blend of powerful post-biotic strains and natural compounds that break the acid block and transform your oral health.</p>
             
-            <!-- TROQUE 'dentabiome-product.png' PELO NOME DA SUA IMAGEM DA PASTA SE FOR DIFERENTE -->
             <img src="dentabiome-product.png" alt="DentaBiome Supplement" class="product-image">
         </div>
     </section>
 
-    <!-- Chamada para Ação (Botão Amarelo) -->
+    <!-- Chamada para Ação (Botão Amarelo com evento de Lead para o Google Analytics) -->
     <section class="cta-section">
-        <a href="http://getdentabiome.com?&shield=d310asxejcuy-p31ra3yc9zlni&extclid={gclid}" class="btn-yellow-cta" target="_self" rel="nofollow sponsored noopener">
+        <a href="http://getdentabiome.com?&shield=d310asxejcuy-p31ra3yc9zlni&extclid={gclid}" 
+           onclick="gtag('event', 'lead', {'event_category': 'affiliate_click', 'event_label': 'dentabiome'});" 
+           class="btn-yellow-cta" 
+           target="_self" 
+           rel="nofollow sponsored noopener">
             Click here now to access the official discounted website
         </a>
     </section>
@@ -252,11 +255,6 @@
         </p>
         <p>© DentaBiome. All Rights Reserved.</p>
     </footer>
-
-    <!-- Popup de Cookie (Opcional, mantido de acordo com o padrão do projeto) -->
-    <div class="cookie-popup" id="cookiePopup" style="display:none;">
-        <button onclick="document.getElementById('cookiePopup').style.display='none'">Close</button>
-    </div>
 
 </body>
 </html>

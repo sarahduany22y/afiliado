@@ -1,65 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product Review</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentaBiome - Official Redirect</title>
+    <style>
+        :root {
+            --primary-color: #2c7a7b;
+            --primary-hover: #285e61;
+            --background-color: #f7fafc;
+            --text-color: #2d3748;
+            --border-color: #e2e8f0;
+        }
 
-<link rel="stylesheet" href="style.css">
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Container Principal */
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .brand-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .message-box {
+            max-width: 500px;
+            margin-bottom: 2rem;
+        }
+
+        .message-box p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+
+        /* Botão de Afiliado */
+        .btn-continue {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-continue:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #ffffff;
+            border-top: 1px solid var(--border-color);
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+
+        .footer-links a {
+            color: #718096;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+            color: var(--primary-color);
+        }
+
+        /* Popup de Cookie */
+        .cookie-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 40px);
+            max-width: 450px;
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cookie-popup.hidden {
+            display: none;
+        }
+
+        .cookie-popup h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .cookie-popup p {
+            font-size: 0.85rem;
+            color: #718096;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .cookie-buttons {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .btn-cookie {
+            padding: 8px 20px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-accept {
+            background-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+        .btn-accept:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-close {
+            background-color: #edf2f7;
+            color: #4a5568;
+        }
+
+        .btn-close:hover {
+            background-color: #e2e8f0;
+        }
+
+        /* Responsividade */
+        @media (max-width: 480px) {
+            .brand-name {
+                font-size: 2rem;
+            }
+            .cookie-popup {
+                bottom: 10px;
+                width: calc(100% - 20px);
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
-
 <body>
 
-<div id="cookieModal" class="modal">
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <h1 class="brand-name">DentaBiome</h1>
+        
+        <div class="message-box">
+            <p>You are about to visit the official DentaBiome website.</p>
+            <p>Click the button below to continue.</p>
+        </div>
 
-    <div class="popup">
+        <!-- TROQUE O LINK ABAIXO PELO SEU HOPLINK -->
+        <a href="SEU_HOPLINK_AQUI" class="btn-continue" target="_self" rel="nofollow sponsored noopener">
+            Continue to Official Website
+        </a>
+    </main>
 
-        <a href="#" id="closeCookie" class="close">Close</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Affiliate Disclosure</a>
+        </div>
+    </footer>
 
-        <h2>Cookie Policy</h2>
-
-        <p>
-            This website uses cookies to personalize content and ads,
-            provide social media features, and analyze our traffic.
-            By clicking Accept, you agree to the use of cookies.
-            Read our
-            <a href="cookies.html">Cookie Policy</a>.
-        </p>
-
-        <button id="acceptCookie">
-            Accept
-        </button>
-
+    <!-- Popup de Cookie -->
+    <div class="cookie-popup" id="cookiePopup">
+        <h3>Cookie Policy</h3>
+        <p>This website uses cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+        <div class="cookie-buttons">
+            <button class="btn-cookie btn-accept" onclick="acceptCookies()">Accept</button>
+            <button class="btn-cookie btn-close" onclick="closePopup()">Close</button>
+        </div>
     </div>
 
-</div>
+    <script>
+        // Função simples para fechar o popup de cookies
+        function acceptCookies() {
+            document.getElementById('cookiePopup').classList.add('hidden');
+            // Aqui você pode adicionar lógica para setar um localStorage se quiser que não apareça de novo
+        }
 
-<div class="container">
-
-<h1>ZenCortex Review</h1>
-
-<p>
-Discover how ZenCortex works,
-its benefits,
-pros and cons,
-and current discount.
-</p>
-
-<img src="product.png" width="300">
-
-<br><br>
-
-<a class="buy"
-href="https://SEU-LINK-DA-CLICKBANK"
-target="_blank">
-
-Get Discount
-
-</a>
-
-</div>
-
-<script src="script.js"></script>
-
+        function closePopup() {
+            document.getElementById('cookiePopup').classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
